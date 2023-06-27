@@ -131,7 +131,7 @@ p {
   color: var(--text);
 }
 .container {
-  width: 1158px;
+  max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -658,7 +658,7 @@ form
 
 .modal {
   position: absolute;
-  width: 408px;
+  width: 408px; 
   min-height: 584px;
   top: 55%;
   left: 50%;
