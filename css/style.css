@@ -138,8 +138,9 @@ p {
 
 .wrap {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 div.card-text {
@@ -151,10 +152,10 @@ div.card-text {
 }
 
 /* 
-===========================
-header
-===========================
-*/
+  =========================== 
+  header 
+  =========================== 
+  */
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
@@ -179,7 +180,6 @@ span {
 .header-wrap,
 .nav-wrap,
 .addres-wrap {
-  align-items: center;
 }
 
 .menu-link {
@@ -302,9 +302,6 @@ section class="about"
 }
 
 .about-us-icons-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: var(--light);
   width: 264px;
   height: 112px;
@@ -356,14 +353,9 @@ section class="team"
 
 .social-icons-list {
   gap: 24px;
-  justify-content: center;
-  align-items: center;
 }
 
 .social-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: var(--primary-brand);
   padding: 11px 12px;
   width: 40px;
@@ -402,8 +394,6 @@ Customers
   gap: 24px;
 }
 .customers-icons-wrap {
-  align-items: center;
-  justify-content: center;
   color: var(--subtle-text);
   width: 168px;
   height: 88px;
@@ -462,9 +452,6 @@ footer
 }
 
 .footer-social-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: var(--primary-brand);
   padding: 8px;
   width: 40px;
@@ -491,7 +478,6 @@ footer
 }
 
 .subscribe-form-input {
-  align-items: center;
   justify-content: flex-start;
 
   width: 264px;
@@ -516,7 +502,6 @@ footer
 }
 
 .subscribe-btn {
-  align-items: center;
   justify-content: center;
   gap: 16px;
   min-width: 165px;
@@ -567,7 +552,6 @@ portfolio
 }
 
 .filters-wrap {
-  justify-content: center;
   margin-bottom: 72px;
 }
 
@@ -658,7 +642,7 @@ form
 
 .modal {
   position: absolute;
-  width: 408px; 
+  width: 408px;
   min-height: 584px;
   top: 55%;
   left: 50%;
@@ -681,7 +665,6 @@ form
 
 .close-btn {
   position: absolute;
-  align-items: center;
   justify-content: center;
   background-color: var(--accent);
   width: 24px;
@@ -859,7 +842,6 @@ checkbox
 
 .checkbox-label .checkbox-icon-box {
   display: inline-flex;
-  align-items: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
@@ -885,4 +867,13 @@ input:checked + .checkbox-label > .checkbox-icon-box {
   background-color: var(--pressed-state);
   fill: var(--light);
   border: none;
+}
+
+@media (min-width: 428px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1158px) {
 }
