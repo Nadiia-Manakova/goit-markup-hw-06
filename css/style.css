@@ -717,9 +717,62 @@ section class="team"
   margin-bottom: 8px;
 }
 
+/* 
+===========================
+Customers
+===========================
+*/
+
+.customers {
+  padding: 96px 0;
+}
+
+.customers-wrap {
+  justify-content: center;
+  align-items: center;
+  max-width: 404px;
+  gap: 24px;
+  margin: 0 auto;
+}
+.customers-icons-wrap {
+  align-items: center;
+  justify-content: center;
+  color: var(--subtle-text);
+  width: 190px;
+  height: 88px;
+  border: 1px solid var(--subtle-text);
+  border-radius: 4px;
+  padding: 16px 32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customers-icons-wrap:hover,
+.customers-icons-wrap:focus {
+  color: var(--pressed-state);
+  border-color: var(--pressed-state);
+}
+
+.customers-icon {
+  fill: currentColor;
+}
+
 @media (min-width: 428px) {
   .modal {
     max-width: 392px;
+  }
+
+  .customers-wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .customers-item {
+    flex-basis: 33%;
   }
 }
 
@@ -790,13 +843,17 @@ section class="team"
   .card {
     flex-basis: calc((100% - 24px) / 2);
   }
+
+  .customers-wrap {
+    max-width: 618px;
+  }
+
+  .customers-icons-wrap {
+    max-width: 168px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1157px) {
-  .addres-wrap {
-    flex-direction: column;
-  }
-
   .about-us-wrap {
     flex-direction: row;
     flex-wrap: wrap;
@@ -814,6 +871,9 @@ section class="team"
     margin-right: 76px;
   }
 
+  .addres-wrap {
+    flex-direction: row;
+  }
   .address-item:not(:last-child) {
     margin-right: 40px;
   }
@@ -863,5 +923,22 @@ section class="services"
     flex-wrap: nowrap;
     max-width: none;
     gap: 24px;
+  }
+
+  .customers {
+    padding: 120px 0;
+  }
+
+  .customers-wrap {
+    flex-wrap: nowrap;
+    max-width: none;
+    gap: 24px;
+  }
+  .customers-item:not(:last-child) {
+    flex-basis: calc((100% - 5 * 24px) / 6);
+  }
+  .team {
+    background-color: var(--light);
+    padding: 120px 0;
   }
 }
