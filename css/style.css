@@ -848,6 +848,10 @@ Customers
     max-width: 618px;
   }
 
+  .customers-item {
+    flex-basis: 25%;
+  }
+
   .customers-icons-wrap {
     max-width: 168px;
   }
@@ -914,7 +918,6 @@ section class="services"
   /* ================================== */
 
   .card:not(:last-child) {
-    margin-right: 24px;
     flex-basis: calc((100% - 3 * 24px) / 4);
   }
 
