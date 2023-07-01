@@ -775,6 +775,9 @@ footer .logo {
   justify-content: center;
   align-items: center;
   gap: 72px;
+}
+
+.footer-wrap:not(.white-text) {
   text-align: center;
 }
 
@@ -786,7 +789,7 @@ footer .logo {
 
 .footer-semibold-text {
   font-weight: 500;
-  margin-bottom: 16px;
+  margin: 0 auto 16px auto;
 }
 
 .footer-icons > .social-icons-list {
