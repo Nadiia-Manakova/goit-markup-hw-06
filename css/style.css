@@ -668,7 +668,7 @@ section class="team"
 }
 
 .card {
-  max-width: 264px;
+  width: 264px;
   background-color: var(--white-background);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
@@ -729,7 +729,6 @@ Customers
 .customers-wrap {
   justify-content: center;
   align-items: center;
-  max-width: 404px;
   gap: 24px;
   margin: 0 auto;
 }
@@ -889,12 +888,11 @@ button:focus {
 
 @media (min-width: 428px) {
   .container {
-    min-width: 428px;
-    max-width: 767px;
+    width: 428px;
   }
 
   .modal {
-    max-width: 392px;
+    width: 392px;
   }
 
   .customers-wrap {
@@ -902,12 +900,8 @@ button:focus {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    column-gap: 24px;
+    column-gap: 16px;
     row-gap: 72px;
-  }
-
-  .customers-item {
-    flex-basis: 33%;
   }
 
   .subscribe-form,
@@ -955,21 +949,13 @@ button:focus {
 */
 
 @media (min-width: 768px) {
-  .container {
-    min-width: 768px;
-    max-width: 1157px;
-  }
-
-  .header-wrap {
-    min-width: 768px;
-  }
-  h1 {
+  . h1 {
     font-size: 56px;
     line-height: 1.07;
   }
 
   .modal {
-    max-width: 408px;
+    width: 408px;
   }
 
   header .logo {
@@ -994,26 +980,24 @@ button:focus {
   .team-cards-wrap {
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 552px;
     row-gap: 72px;
     column-gap: 24px;
     margin: 0 auto;
   }
 
-  .card {
-    flex-basis: calc((100% - 24px) / 2);
-  }
-
-  .customers-wrap {
-    max-width: 618px;
-  }
-
-  .customers-item {
-    flex-basis: 25%;
-  }
-
   .customers-icons-wrap {
-    max-width: 168px;
+    width: 168px;
+  }
+  .customers-wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .customers-item {
+    flex-basis: calc(100% / 4 - 48px);
   }
 
   .footer-wrap {
@@ -1050,23 +1034,22 @@ button:focus {
 */
 
 @media (min-width: 768px) and (max-width: 1157px) {
+  .container {
+    width: 768px;
+  }
   .about-us-wrap {
     flex-direction: row;
     flex-wrap: wrap;
     row-gap: 72px;
     column-gap: 24px;
-    width: auto;
-  }
-  .about-us-item {
-    flex-basis: 33%;
+    width: 100%;
   }
 
   .footer-wrap {
-    background-color: red;
-    max-width: 557px;
     flex-wrap: wrap;
     row-gap: 72px;
     column-gap: 24px;
+    padding-left: 108px;
   }
 }
 
@@ -1134,7 +1117,6 @@ section class="services"
   .team-cards-wrap {
     flex-direction: row;
     flex-wrap: nowrap;
-    max-width: none;
     gap: 24px;
   }
 
@@ -1148,7 +1130,6 @@ section class="services"
 
   .customers-wrap {
     flex-wrap: nowrap;
-    max-width: none;
     gap: 24px;
   }
   .customers-item:not(:last-child) {
