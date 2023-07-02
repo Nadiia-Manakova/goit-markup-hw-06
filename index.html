@@ -22,12 +22,11 @@
 
     <header class="page-header">
       <div class="header-wrap wrap container">
-        
         <nav class="nav-wrap wrap">
           <a href="./index.html" class="logo link"
             >Web<span class="header-logo">Studio</span></a
           >
-                    <ul class="list menu-wrap wrap">
+          <ul class="list menu-wrap wrap">
             <li class="nav-item">
               <a href="./index.html" class="active menu-link link">Studio</a>
             </li>
@@ -55,14 +54,16 @@
           </ul>
         </address>
 
-        <button type="button" class="menu-toggle-hamurger js-open-menu"
+        <button
+          type="button"
+          class="menu-toggle-hamurger js-open-menu"
           aria-expanded="false"
-          aria-controls="mobile-menu">
+          aria-controls="mobile-menu"
+        >
           <svg class="hamburger-icon" width="32" height="20">
             <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
           </svg>
         </button>
-
       </div>
     </header>
 
@@ -165,7 +166,10 @@
             <li class="card">
               <img
                 src="./images/Mark_Guerrero.jpg"
-                srcset="./images/Mark_Guerrero.jpg 1x, ./images/Mark_Guerrero@2.jpg 2x"
+                srcset="
+                  ./images/Mark_Guerrero.jpg   1x,
+                  ./images/Mark_Guerrero@2.jpg 2x
+                "
                 alt="Mark Guerrero"
                 width="264"
               />
@@ -222,7 +226,12 @@
               </div>
             </li>
             <li class="card">
-              <img src="./images/Tom_Ford.jpg" srcset="./images/Tom_Ford.jpg 1x, ./images/Tom_Ford@2.jpg 2x" alt="Tom Ford" width="264" />
+              <img
+                src="./images/Tom_Ford.jpg"
+                srcset="./images/Tom_Ford.jpg 1x, ./images/Tom_Ford@2.jpg 2x"
+                alt="Tom Ford"
+                width="264"
+              />
               <div class="card-text-item card-text">
                 <h3 class="list-title">Tom Ford</h3>
                 <p class="list-text">Frontend Developer</p>
@@ -278,7 +287,10 @@
             <li class="card">
               <img
                 src="./images/Camila_Garcia.jpg"
-                srcset="./images/Camila_Garcia.jpg 1x, ./images/Camila_Garcia@2.jpg 2x"
+                srcset="
+                  ./images/Camila_Garcia.jpg   1x,
+                  ./images/Camila_Garcia@2.jpg 2x
+                "
                 alt="Camila Garcia"
                 width="264"
               />
@@ -337,7 +349,10 @@
             <li class="card">
               <img
                 src="./images/Daniel_Wilson.jpg"
-                srcset="./images/Daniel_Wilson.jpg 1x, ./images/Daniel_Wilson@2.jpg 2x"
+                srcset="
+                  ./images/Daniel_Wilson.jpg   1x,
+                  ./images/Daniel_Wilson@2.jpg 2x
+                "
                 alt="Daniel Wilson"
                 width="264"
               />
@@ -614,10 +629,10 @@
     <!-- mobile menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-btn-close js-close-menu">
-          <svg class="close-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-close-black"></use>
-          </svg>
-        </button>
+        <svg class="close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
       <div class="mobile-menu-wrap wrap">
         <nav class="mobile-nav-wrap wrap">
           <ul class="list mobile-menu-wrap wrap">
@@ -625,7 +640,9 @@
               <a href="./index.html" class="mobile-menu-link link">Studio</a>
             </li>
             <li class="mobile-nav-item">
-              <a href="./portfolio.html" class="mobile-menu-link link">Portfolio</a>
+              <a href="./portfolio.html" class="mobile-menu-link link"
+                >Portfolio</a
+              >
             </li>
             <li class="mobile-nav-item">
               <a href="" class="mobile-menu-link link">Contacts</a>
@@ -641,61 +658,63 @@
               >
             </li>
             <li class="mobile-address-item">
-              <a href="mailto:info@devstudio.com" class="mobile-contakt-mail link"
+              <a
+                href="mailto:info@devstudio.com"
+                class="mobile-contakt-mail link"
                 >info@devstudio.com</a
               >
             </li>
-            
           </ul>
         </address>
-    <ul class="menu-icons-list list wrap">
-            <li class="social-icons-item">
-              <a
-                href="https://www.instagram.com/"
-                class="menu-social-icon link"
-                target="_blank"
-              >
-                <svg class="icon-img" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="menu-icons-item">
-              <a
-                href="https://twitter.com/"
-                class="menu-social-icon link"
-                target="_blank"
-              >
-                <svg class="icon-img" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="menu-social-icons-item">
-              <a
-                href="https://www.facebook.com/"
-                class="menu-social-icon link"
-                target="_blank"
-              >
-                <svg class="icon-img" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
+        <ul class="menu-icons-list list wrap">
+          <li class="social-icons-item">
+            <a
+              href="https://www.instagram.com/"
+              class="menu-social-icon link"
+              target="_blank"
+            >
+              <svg class="icon-img" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-icons-item">
+            <a
+              href="https://twitter.com/"
+              class="menu-social-icon link"
+              target="_blank"
+            >
+              <svg class="icon-img" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-social-icons-item">
+            <a
+              href="https://www.facebook.com/"
+              class="menu-social-icon link"
+              target="_blank"
+            >
+              <svg class="icon-img" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
 
-            <li class="menu-social-icons-item">
-              <a
-                href="https://www.linkedin.com/"
-                class="menu-social-icon link"
-                target="_blank"
-              >
-                <svg class="icon-img" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-  </div>
+          <li class="menu-social-icons-item">
+            <a
+              href="https://www.linkedin.com/"
+              class="menu-social-icon link"
+              target="_blank"
+            >
+              <svg class="icon-img" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <script src="./js/modal.js"></script>
     <script

@@ -1115,7 +1115,7 @@ portfolio
 */
 
 @media (min-width: 768px) {
-  . h1 {
+  .h1 {
     font-size: 56px;
     line-height: 1.07;
   }
