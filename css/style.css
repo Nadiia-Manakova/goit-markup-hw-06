@@ -1224,6 +1224,7 @@ portfolio
 
   .gallery-image-box {
     height: 300px;
+    width: 100%;
   }
   .gallery-card-img {
     width: 356px;
