@@ -793,7 +793,7 @@ Customers
   align-items: center;
   justify-content: center;
   color: var(--subtle-text);
-  width: 190px;
+  /*width: 190px;*/
   height: 88px;
   border: 1px solid var(--subtle-text);
   border-radius: 4px;
@@ -810,6 +810,10 @@ Customers
 
 .customers-icon {
   fill: currentColor;
+}
+
+.customers-item {
+  flex-basis: calc(100% / 2 - 24px);
 }
 
 /* 
@@ -1321,6 +1325,10 @@ section class="services"
 
   .services-item {
     flex-basis: calc((100% - 48px) / 3);
+  }
+
+  .hero {
+    padding: 188px 0;
   }
 
   /* ================================== */
